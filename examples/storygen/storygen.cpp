@@ -59,6 +59,7 @@ int main(){
             std::string input;
             std::cout << "\n\nPress q to return\n\nDescribe the story you want written:>";
             std::getline(std::cin, input);
+            if (input == "q") break;
             input = input + "\n\n### Response:";
             Rwkv.loadContext(input);
         }
